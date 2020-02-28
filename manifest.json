@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Google tools",
+    "version": "1.0",
+    
+    "icons": {
+      "128": "logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [ "<all_urls>" ],
+        "js": [ "content.js" ]
+      }
+    ],
+
+    "permissions": [
+      "https://google.com/*"
+    ],
+  
+        "browser_action": {
+          "default_title": "Gtools",
+          "default_icon": "logo.png",
+          "default_popup": "popup.html"
+      }
+      
+  }
